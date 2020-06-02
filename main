@@ -1,0 +1,56 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Qustions
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numb1, numb2, result;
+
+            string choice;
+
+            Console.WriteLine("Enter your operator");
+            choice = Console.ReadLine();
+
+                Console.WriteLine("Enter the operands");
+                numb1 = int.Parse(Console.ReadLine());
+                numb2 = int.Parse(Console.ReadLine());
+
+                if (choice == "+")
+                {
+
+                    result = numb1 + numb2;
+                    Console.WriteLine("Result is: " + result);
+                }
+                else if (choice == "-")
+                {
+                    result = numb1 - numb2;
+                    Console.WriteLine("Result is: " + result);
+                }
+
+                else if (choice == "*")
+                {
+                    result = numb1 * numb2;
+                    Console.WriteLine("Result is: " + result);
+                }
+                else if (choice == "/")
+
+                {
+                    result = numb1 / numb2;
+                    int res = numb1%numb2;
+                    Console.WriteLine("Result is: " + result);
+                    Console.WriteLine("Remainder is: " + res);
+                }
+
+            else
+            {
+                Console.WriteLine("Enter Wrong");
+            }
+        }
+    }
+}
