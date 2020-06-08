@@ -1,0 +1,15 @@
+using System;			
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Enter the number:");
+		int n = int.Parse(Console.ReadLine());
+		Console.WriteLine("Enter the number for till power is being used:");
+		int q = int.Parse(Console.ReadLine());
+		for (int i=1;i<=q;i++)
+		{
+			Console.WriteLine("Power of {0} with {1} is {2}",n,i,Math.Pow(n,i));
+		}
+	}
+}
